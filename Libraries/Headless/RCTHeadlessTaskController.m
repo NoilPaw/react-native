@@ -14,21 +14,19 @@
 
 @interface RCTHeadlessTaskController ()
 @property (nonatomic, strong) RCTBridge *bridge;
-@property (nonatomic, strong) NSString *module;
 @property (nonatomic, strong) NSMutableDictionary<NSNumber *, RCTHeadlessTask *> *activeTasks;
 @property (nonatomic) int lastTaskId;
 @end
 
 @implementation RCTHeadlessTaskController
 
-- (instancetype)initWithBundleURL:(NSURL *)bundleURL
+- (instancetype)initWithDelegate:(id<RCTBridgeDelegate>)delegate
 {
     self = [super init];
     if (self) {
         self.lastTaskId = 0;
         self.activeTasks = [NSMutableDictionary new];
-        self.bridge = [[RCTBridge alloc] initWithBundleURL:bundleURL
-                                            moduleProvider:nil
+        self.bridge = [[RCTBridge alloc] initWithDelegate:delegate
                                              launchOptions:nil];
         
         [[NSNotificationCenter defaultCenter] addObserver:self
@@ -57,11 +55,20 @@
 
 - (void)executeTask:(RCTHeadlessTask *)task
 {
+    if (!self.bridge.isValid) {
+        // TODO: Handle error
+        return;
+    }
+    
     NSNumber *newTaskId = @(self.lastTaskId++);
     self.activeTasks[newTaskId] = task;
     
-    if (self.bridge.isValid) {
+    if (!self.bridge.isLoading) {
         [self startTask:task withTaskId:newTaskId];
+    }
+
+    if (task.timeout > 0) {
+        [self startTimeoutForTask:task];
     }
 }
 
@@ -71,10 +78,6 @@
                         method:@"startHeadlessTask"
                           args:@[taskId, task.taskKey, task.data]
                     completion:NULL];
-    
-    if (task.timeout > 0) {
-        [self startTimeoutForTask:task];
-    }
 }
 
 - (void)javaScriptDidLoad:(NSNotification *)notification
