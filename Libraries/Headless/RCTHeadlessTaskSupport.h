@@ -12,6 +12,6 @@
 
 RCT_EXTERN NSString *const RCTHeadlessTaskDidFinishNotification;
 
-@interface HeadlessJsTaskSupport : NSObject <RCTBridgeModule>
+@interface RCTHeadlessTaskSupport : NSObject <RCTBridgeModule>
 
 @end

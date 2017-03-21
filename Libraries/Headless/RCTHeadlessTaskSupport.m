@@ -7,13 +7,13 @@
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 
-#import "HeadlessJsTaskSupport.h"
+#import "RCTHeadlessTaskSupport.h"
 
 NSString *const RCTHeadlessTaskDidFinishNotification = @"RCTHeadlessTaskDidFinishNotification";
 
-@implementation HeadlessJsTaskSupport
+@implementation RCTHeadlessTaskSupport
 
-RCT_EXPORT_MODULE();
+RCT_EXPORT_MODULE(HeadlessJsTaskSupport);
 
 RCT_EXPORT_METHOD(notifyTaskFinished:(int)taskId)
 {

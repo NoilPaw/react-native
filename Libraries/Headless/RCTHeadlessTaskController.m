@@ -9,7 +9,7 @@
 
 #import "RCTHeadlessTaskController.h"
 #import "RCTHeadlessTask.h"
-#import "HeadlessJsTaskSupport.h"
+#import "RCTHeadlessTaskSupport.h"
 #import "RCTBridge.h"
 
 @interface RCTHeadlessTaskController ()
