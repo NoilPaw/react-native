@@ -89,6 +89,11 @@ Pod::Spec.new do |s|
     ss.source_files         = "Libraries/Geolocation/*.{h,m}"
   end
 
+  s.subspec "RCTHeadless" do |ss|
+    ss.dependency             "React/Core"
+    ss.source_files         = "Libraries/Headless/*.{h,m}"
+  end
+
   s.subspec "RCTImage" do |ss|
     ss.dependency             "React/Core"
     ss.dependency             "React/RCTNetwork"
