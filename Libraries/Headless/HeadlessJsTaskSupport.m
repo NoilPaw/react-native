@@ -17,9 +17,9 @@ RCT_EXPORT_MODULE();
 
 RCT_EXPORT_METHOD(notifyTaskFinished:(int)taskId)
 {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [[NSNotificationCenter defaultCenter] postNotificationName:RCTHeadlessTaskDidFinishNotification object:@{@"taskId": @(taskId)}];
-    });
+  dispatch_async(dispatch_get_main_queue(), ^{
+    [[NSNotificationCenter defaultCenter] postNotificationName:RCTHeadlessTaskDidFinishNotification object:@{@"taskId": @(taskId)}];
+  });
 }
 
 @end
