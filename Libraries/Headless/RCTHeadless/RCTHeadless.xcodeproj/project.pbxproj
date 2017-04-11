@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0809D3E71E8264BB0052F999 /* RCTHeadlessTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 0809D3E21E8264BB0052F999 /* RCTHeadlessTask.m */; };
+		0809D3E81E8264BB0052F999 /* RCTHeadlessTaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0809D3E41E8264BB0052F999 /* RCTHeadlessTaskController.m */; };
+		0809D3E91E8264BB0052F999 /* RCTHeadlessTaskSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0809D3E61E8264BB0052F999 /* RCTHeadlessTaskSupport.m */; };
+		08880E1A1E93EFCD00F2D0E2 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08880E171E93EFC300F2D0E2 /* libRCTWebSocket.a */; };
+		08880E1D1E93F0A100F2D0E2 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08880E171E93EFC300F2D0E2 /* libRCTWebSocket.a */; };
+		089552311E82BB160099A213 /* RCTHeadlessTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 0809D3E11E8264BB0052F999 /* RCTHeadlessTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		089552321E82BB1A0099A213 /* RCTHeadlessTaskController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0809D3E31E8264BB0052F999 /* RCTHeadlessTaskController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		089552331E82BB1D0099A213 /* RCTHeadlessTaskSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 0809D3E51E8264BB0052F999 /* RCTHeadlessTaskSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08E002181E8E83FC00396E66 /* RCTHeadlessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E002171E8E83FC00396E66 /* RCTHeadlessTests.m */; };
+		08E0021A1E8E83FC00396E66 /* libRCTHeadless.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0809D3C61E8263CB0052F999 /* libRCTHeadless.a */; };
+		08E002551E8E84FD00396E66 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E0023D1E8E84D300396E66 /* libReact.a */; };
+		08E002561E8E852B00396E66 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E0023D1E8E84D300396E66 /* libReact.a */; };
+		08E002581E8E868800396E66 /* TestBundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 08E002571E8E868800396E66 /* TestBundle.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08880E161E93EFC300F2D0E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08880E111E93EFC200F2D0E2 /* RCTWebSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3C86DF461ADF2C930047B81A;
+			remoteInfo = RCTWebSocket;
+		};
+		08880E181E93EFC300F2D0E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08880E111E93EFC200F2D0E2 /* RCTWebSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28881D9B049200D4039D;
+			remoteInfo = "RCTWebSocket-tvOS";
+		};
+		08E0021B1E8E83FC00396E66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0809D3BE1E8263CA0052F999 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0809D3C51E8263CA0052F999;
+			remoteInfo = RCTHeadless;
+		};
+		08E0023C1E8E84D300396E66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08E002311E8E84D300396E66 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
+			remoteInfo = React;
+		};
+		08E0023E1E8E84D300396E66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08E002311E8E84D300396E66 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28131D9B038B00D4039D;
+			remoteInfo = "React-tvOS";
+		};
+		08E002401E8E84D300396E66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08E002311E8E84D300396E66 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3C059A1DE3340900C268FA;
+			remoteInfo = yoga;
+		};
+		08E002421E8E84D300396E66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08E002311E8E84D300396E66 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3C06751DE3340C00C268FA;
+			remoteInfo = "yoga-tvOS";
+		};
+		08E002441E8E84D300396E66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08E002311E8E84D300396E66 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD9251DE5FBEC00167DC4;
+			remoteInfo = cxxreact;
+		};
+		08E002461E8E84D300396E66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08E002311E8E84D300396E66 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD9321DE5FBEE00167DC4;
+			remoteInfo = "cxxreact-tvOS";
+		};
+		08E002481E8E84D300396E66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08E002311E8E84D300396E66 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD90B1DE5FBD600167DC4;
+			remoteInfo = jschelpers;
+		};
+		08E0024A1E8E84D300396E66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08E002311E8E84D300396E66 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD9181DE5FBD800167DC4;
+			remoteInfo = "jschelpers-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0809D3C41E8263CA0052F999 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0809D3C61E8263CB0052F999 /* libRCTHeadless.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTHeadless.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0809D3E11E8264BB0052F999 /* RCTHeadlessTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTHeadlessTask.h; path = ../../RCTHeadlessTask.h; sourceTree = "<group>"; };
+		0809D3E21E8264BB0052F999 /* RCTHeadlessTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTHeadlessTask.m; path = ../../RCTHeadlessTask.m; sourceTree = "<group>"; };
+		0809D3E31E8264BB0052F999 /* RCTHeadlessTaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTHeadlessTaskController.h; path = ../../RCTHeadlessTaskController.h; sourceTree = "<group>"; };
+		0809D3E41E8264BB0052F999 /* RCTHeadlessTaskController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTHeadlessTaskController.m; path = ../../RCTHeadlessTaskController.m; sourceTree = "<group>"; };
+		0809D3E51E8264BB0052F999 /* RCTHeadlessTaskSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTHeadlessTaskSupport.h; path = ../../RCTHeadlessTaskSupport.h; sourceTree = "<group>"; };
+		0809D3E61E8264BB0052F999 /* RCTHeadlessTaskSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTHeadlessTaskSupport.m; path = ../../RCTHeadlessTaskSupport.m; sourceTree = "<group>"; };
+		08880E111E93EFC200F2D0E2 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = ../../WebSocket/RCTWebSocket.xcodeproj; sourceTree = "<group>"; };
+		08E002151E8E83FB00396E66 /* RCTHeadlessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCTHeadlessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08E002171E8E83FC00396E66 /* RCTHeadlessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTHeadlessTests.m; sourceTree = "<group>"; };
+		08E002191E8E83FC00396E66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08E002311E8E84D300396E66 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = ../../../React/React.xcodeproj; sourceTree = "<group>"; };
+		08E002571E8E868800396E66 /* TestBundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = TestBundle.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0809D3C31E8263CA0052F999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E002561E8E852B00396E66 /* libReact.a in Frameworks */,
+				08880E1D1E93F0A100F2D0E2 /* libRCTWebSocket.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08E002121E8E83FB00396E66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E002551E8E84FD00396E66 /* libReact.a in Frameworks */,
+				08880E1A1E93EFCD00F2D0E2 /* libRCTWebSocket.a in Frameworks */,
+				08E0021A1E8E83FC00396E66 /* libRCTHeadless.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0809D3BD1E8263CA0052F999 = {
+			isa = PBXGroup;
+			children = (
+				08E002301E8E84BC00396E66 /* Libraries */,
+				0809D3C81E8263CB0052F999 /* RCTHeadless */,
+				08E002161E8E83FC00396E66 /* RCTHeadlessTests */,
+				0809D3C71E8263CB0052F999 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0809D3C71E8263CB0052F999 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0809D3C61E8263CB0052F999 /* libRCTHeadless.a */,
+				08E002151E8E83FB00396E66 /* RCTHeadlessTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0809D3C81E8263CB0052F999 /* RCTHeadless */ = {
+			isa = PBXGroup;
+			children = (
+				0809D3E11E8264BB0052F999 /* RCTHeadlessTask.h */,
+				0809D3E21E8264BB0052F999 /* RCTHeadlessTask.m */,
+				0809D3E31E8264BB0052F999 /* RCTHeadlessTaskController.h */,
+				0809D3E41E8264BB0052F999 /* RCTHeadlessTaskController.m */,
+				0809D3E51E8264BB0052F999 /* RCTHeadlessTaskSupport.h */,
+				0809D3E61E8264BB0052F999 /* RCTHeadlessTaskSupport.m */,
+			);
+			path = RCTHeadless;
+			sourceTree = "<group>";
+		};
+		08880E121E93EFC200F2D0E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08880E171E93EFC300F2D0E2 /* libRCTWebSocket.a */,
+				08880E191E93EFC300F2D0E2 /* libRCTWebSocket-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08E002161E8E83FC00396E66 /* RCTHeadlessTests */ = {
+			isa = PBXGroup;
+			children = (
+				08E002171E8E83FC00396E66 /* RCTHeadlessTests.m */,
+				08E002571E8E868800396E66 /* TestBundle.js */,
+				08E002191E8E83FC00396E66 /* Info.plist */,
+			);
+			path = RCTHeadlessTests;
+			sourceTree = "<group>";
+		};
+		08E002301E8E84BC00396E66 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				08880E111E93EFC200F2D0E2 /* RCTWebSocket.xcodeproj */,
+				08E002311E8E84D300396E66 /* React.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		08E002321E8E84D300396E66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08E0023D1E8E84D300396E66 /* libReact.a */,
+				08E0023F1E8E84D300396E66 /* libReact.a */,
+				08E002411E8E84D300396E66 /* libyoga.a */,
+				08E002431E8E84D300396E66 /* libyoga.a */,
+				08E002451E8E84D300396E66 /* libcxxreact.a */,
+				08E002471E8E84D300396E66 /* libcxxreact.a */,
+				08E002491E8E84D300396E66 /* libjschelpers.a */,
+				08E0024B1E8E84D300396E66 /* libjschelpers.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		089552301E82BB110099A213 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				089552331E82BB1D0099A213 /* RCTHeadlessTaskSupport.h in Headers */,
+				089552321E82BB1A0099A213 /* RCTHeadlessTaskController.h in Headers */,
+				089552311E82BB160099A213 /* RCTHeadlessTask.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0809D3C51E8263CA0052F999 /* RCTHeadless */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0809D3CF1E8263CB0052F999 /* Build configuration list for PBXNativeTarget "RCTHeadless" */;
+			buildPhases = (
+				0809D3C21E8263CA0052F999 /* Sources */,
+				0809D3C31E8263CA0052F999 /* Frameworks */,
+				0809D3C41E8263CA0052F999 /* CopyFiles */,
+				089552301E82BB110099A213 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RCTHeadless;
+			productName = RCTHeadless;
+			productReference = 0809D3C61E8263CB0052F999 /* libRCTHeadless.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		08E002141E8E83FB00396E66 /* RCTHeadlessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08E0021F1E8E83FC00396E66 /* Build configuration list for PBXNativeTarget "RCTHeadlessTests" */;
+			buildPhases = (
+				08E002111E8E83FB00396E66 /* Sources */,
+				08E002121E8E83FB00396E66 /* Frameworks */,
+				08E002131E8E83FB00396E66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08E0021C1E8E83FC00396E66 /* PBXTargetDependency */,
+			);
+			name = RCTHeadlessTests;
+			productName = RCTHeadlessTests;
+			productReference = 08E002151E8E83FB00396E66 /* RCTHeadlessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0809D3BE1E8263CA0052F999 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = facebook;
+				TargetAttributes = {
+					0809D3C51E8263CA0052F999 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					08E002141E8E83FB00396E66 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0809D3C11E8263CA0052F999 /* Build configuration list for PBXProject "RCTHeadless" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0809D3BD1E8263CA0052F999;
+			productRefGroup = 0809D3C71E8263CB0052F999 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 08880E121E93EFC200F2D0E2 /* Products */;
+					ProjectRef = 08880E111E93EFC200F2D0E2 /* RCTWebSocket.xcodeproj */;
+				},
+				{
+					ProductGroup = 08E002321E8E84D300396E66 /* Products */;
+					ProjectRef = 08E002311E8E84D300396E66 /* React.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				0809D3C51E8263CA0052F999 /* RCTHeadless */,
+				08E002141E8E83FB00396E66 /* RCTHeadlessTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		08880E171E93EFC300F2D0E2 /* libRCTWebSocket.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTWebSocket.a;
+			remoteRef = 08880E161E93EFC300F2D0E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08880E191E93EFC300F2D0E2 /* libRCTWebSocket-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTWebSocket-tvOS.a";
+			remoteRef = 08880E181E93EFC300F2D0E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08E0023D1E8E84D300396E66 /* libReact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReact.a;
+			remoteRef = 08E0023C1E8E84D300396E66 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08E0023F1E8E84D300396E66 /* libReact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReact.a;
+			remoteRef = 08E0023E1E8E84D300396E66 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08E002411E8E84D300396E66 /* libyoga.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libyoga.a;
+			remoteRef = 08E002401E8E84D300396E66 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08E002431E8E84D300396E66 /* libyoga.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libyoga.a;
+			remoteRef = 08E002421E8E84D300396E66 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08E002451E8E84D300396E66 /* libcxxreact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcxxreact.a;
+			remoteRef = 08E002441E8E84D300396E66 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08E002471E8E84D300396E66 /* libcxxreact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcxxreact.a;
+			remoteRef = 08E002461E8E84D300396E66 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08E002491E8E84D300396E66 /* libjschelpers.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjschelpers.a;
+			remoteRef = 08E002481E8E84D300396E66 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08E0024B1E8E84D300396E66 /* libjschelpers.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjschelpers.a;
+			remoteRef = 08E0024A1E8E84D300396E66 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08E002131E8E83FB00396E66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E002581E8E868800396E66 /* TestBundle.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0809D3C21E8263CA0052F999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0809D3E91E8264BB0052F999 /* RCTHeadlessTaskSupport.m in Sources */,
+				0809D3E71E8264BB0052F999 /* RCTHeadlessTask.m in Sources */,
+				0809D3E81E8264BB0052F999 /* RCTHeadlessTaskController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08E002111E8E83FB00396E66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E002181E8E83FC00396E66 /* RCTHeadlessTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08E0021C1E8E83FC00396E66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0809D3C51E8263CA0052F999 /* RCTHeadless */;
+			targetProxy = 08E0021B1E8E83FC00396E66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0809D3CD1E8263CB0052F999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0809D3CE1E8263CB0052F999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0809D3D01E8263CB0052F999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"/Users/dado/Programming/tapdo/react-native/Libraries/WebSocket/**",
+					"/Users/dado/Programming/tapdo/react-native/React/**",
+					"\"$(SRCROOT)/../../WebSocket/RCTSRWebSocket.h\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0809D3D11E8263CB0052F999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"/Users/dado/Programming/tapdo/react-native/Libraries/WebSocket/**",
+					"/Users/dado/Programming/tapdo/react-native/React/**",
+					"\"$(SRCROOT)/../../WebSocket/RCTSRWebSocket.h\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		08E0021D1E8E83FC00396E66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"/Users/dado/Programming/tapdo/react-native/React/**",
+					"/Users/dado/Programming/tapdo/react-native/Libraries/WebSocket/**",
+				);
+				INFOPLIST_FILE = RCTHeadlessTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-lc++";
+				PRODUCT_BUNDLE_IDENTIFIER = com.facebook.react.RCTHeadlessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		08E0021E1E8E83FC00396E66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"/Users/dado/Programming/tapdo/react-native/React/**",
+					"/Users/dado/Programming/tapdo/react-native/Libraries/WebSocket/**",
+				);
+				INFOPLIST_FILE = RCTHeadlessTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-lc++";
+				PRODUCT_BUNDLE_IDENTIFIER = com.facebook.react.RCTHeadlessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0809D3C11E8263CA0052F999 /* Build configuration list for PBXProject "RCTHeadless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0809D3CD1E8263CB0052F999 /* Debug */,
+				0809D3CE1E8263CB0052F999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0809D3CF1E8263CB0052F999 /* Build configuration list for PBXNativeTarget "RCTHeadless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0809D3D01E8263CB0052F999 /* Debug */,
+				0809D3D11E8263CB0052F999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08E0021F1E8E83FC00396E66 /* Build configuration list for PBXNativeTarget "RCTHeadlessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08E0021D1E8E83FC00396E66 /* Debug */,
+				08E0021E1E8E83FC00396E66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0809D3BE1E8263CA0052F999 /* Project object */;
+}

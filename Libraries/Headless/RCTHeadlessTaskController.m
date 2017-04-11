@@ -10,7 +10,7 @@
 #import "RCTHeadlessTaskController.h"
 #import "RCTHeadlessTask.h"
 #import "RCTHeadlessTaskSupport.h"
-#import "RCTBridge.h"
+#import <React/RCTBridge.h>
 
 @interface RCTHeadlessTaskController ()
 @property (nonatomic, strong) RCTBridge *bridge;
@@ -77,7 +77,7 @@
   [self.bridge enqueueJSCall:@"AppRegistry"
                       method:@"startHeadlessTask"
                         args:@[taskId, task.taskKey, task.data]
-                  completion:NULL];
+                  completion:nil];
 }
 
 - (void)javaScriptDidLoad:(NSNotification *)notification
@@ -97,8 +97,9 @@
   if (self.activeTasks.count > 0) {
     for (NSNumber *taskId in self.activeTasks) {
       RCTHeadlessTask *task = self.activeTasks[taskId];
-      //TODO: Notify a task delegate about the failure
+      task.completion(NO);
     }
+    [self.activeTasks removeAllObjects];
   }
 }
 
@@ -106,18 +107,25 @@
 {
   NSNumber *taskId = notification.userInfo[@"taskId"];
   if (taskId) {
+
+    NSNumber *taskToRemove = nil;
+
     for (NSNumber *aTaskId in self.activeTasks) {
       if ([aTaskId isEqualToNumber:taskId]) {
+        taskToRemove = aTaskId;
 
         RCTHeadlessTask *task = [self.activeTasks objectForKey:aTaskId];
 
         [self.activeTasks removeObjectForKey:aTaskId];
         [self cancelTimeoutForTask:task];
 
-        //TODO: Notify a task delegate about the success
-
+        task.completion(YES);
         break;
       }
+    }
+
+    if (taskToRemove != nil) {
+      [self.activeTasks removeObjectForKey:taskToRemove];
     }
   }
 }

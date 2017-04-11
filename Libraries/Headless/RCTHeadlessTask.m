@@ -14,12 +14,14 @@
 - (instancetype)initWithTaskKey:(NSString *)taskKey
                            data:(NSDictionary *)data
                         timeout:(long)timeout
+                     completion:(TaskCompletion)completion
 {
   self = [super init];
   if (self != nil) {
     _taskKey = taskKey;
     _data = data;
     _timeout = timeout;
+    _completion = completion;
   }
   return self;
 }

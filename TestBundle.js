@@ -5,13 +5,14 @@
  * This source code is licensed under the BSD-style license found in the
  * LICENSE file in the root directory of this source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @flow
  */
 
-#import <Foundation/Foundation.h>
-#import <React/RCTBridgeModule.h>
+import {AppRegistry} from 'react-native';
 
-RCT_EXTERN NSString *const RCTHeadlessTaskDidFinishNotification;
+const TestHeadless = async (taskData) => {
+  console.log("Execute feature in background: " + taskData);
+}
 
-@interface RCTHeadlessTaskSupport : NSObject <RCTBridgeModule>
-
-@end
+AppRegistry.registerHeadlessTask('TestTask', TestHeadless);
